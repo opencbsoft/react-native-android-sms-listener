@@ -48,15 +48,15 @@ public class SmsListenerModule extends ReactContextBaseJavaModule implements Lif
         }
     }
 
-    // @Override
-    // public void onHostResume() {
-    //     registerReceiverIfNecessary(mReceiver);
-    // }
+    @Override
+    public void onHostResume() {
+        // registerReceiverIfNecessary(mReceiver);
+    }
 
-    // @Override
-    // public void onHostPause() {
-    //     unregisterReceiver(mReceiver);
-    // }
+    @Override
+    public void onHostPause() {
+        // unregisterReceiver(mReceiver);
+    }
 
     @Override
     public void onHostDestroy() {
